@@ -1,0 +1,129 @@
+@import '../../../../styles/mixins';
+
+.content-menu,
+.language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header {
+  padding: 10px 0;
+  &__button {
+    background: url(../../../../assets/hamburguer.svg) no-repeat center;
+    border: none;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    color: transparent;
+    transition: all 0.5s ease;
+    transform: rotate(0deg);
+    @include desktop {
+      display: none;
+    }
+
+    &--active{
+      transform: rotate(180deg);
+      background: url(../../../../assets/close.svg) no-repeat center;
+    }
+  }
+}
+
+.content-menu{
+  width: 100%;
+  justify-content: space-between;
+  @include desktop {
+    justify-content: flex-start;
+  }
+}
+
+.content-logo{
+  margin: 0 auto;
+}
+
+.content-menu__navigation{
+  display: flex;
+}
+.navigation{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  flex-direction: column;
+  position: fixed;
+  left: 100%;
+  top: 55px;
+  transition: all .5s ease;
+
+  @include desktop{
+    display: block;
+    position: inherit;
+    height: auto;
+    &__ul{
+      flex-direction: row;
+    }
+  }
+
+  &--active{
+    //display: block;
+    left: 0;
+    pointer-events: auto;
+  }
+
+  &__ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    @include desktop{
+      flex-direction: row;
+      gap: 15px;
+      margin: 0;
+    }
+  }
+
+  &__li {
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid var(--soft-gray-2);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    &:last-child{
+      border: none;
+    }
+    @include desktop{
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__a{
+    text-decoration: none;
+    color: var(--color-main);
+    font-size: 20px;
+    @include desktop{
+      font-size: 16px;
+    }
+  }
+
+}
+
+.language {
+  &__text {
+    color: var(--color-main);
+    display: none;
+  }
+
+  &__logo{
+    width: 18px;
+    height: 20px;
+  }
+
+  @include desktop {
+    &__text {
+      display: block;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+// screen size
+$screen-tb: 767px;
+
+@mixin desktop {
+  @media (min-width: #{$screen-tb}) {
+    @content;
+  }
+}

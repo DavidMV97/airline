@@ -1,0 +1,23 @@
+<header class="header main-wrapper">
+  <div class="main-wrapper__content main-wrapper__content--flex">
+    <div class="content-menu">
+      <button (click)="setActive()" class="header__button"  [ngClass]="{'header__button--active' : active }" >
+      </button>
+      <div class="content-logo">
+        <app-logo></app-logo>
+      </div>
+      <nav class="navigation" [ngClass]="{'navigation--active' : active }">
+        <ul class="navigation__ul">
+          <li class="navigation__li"><a href="#" class="navigation__a">Check-in</a></li>
+          <li class="navigation__li"><a href="#" class="navigation__a">Manage my booking</a></li>
+          <li class="navigation__li"><a href="#" class="navigation__a">Information</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="language">
+      <img class="language__logo" src="../../../../assets/lenguaje-logo.svg" alt="Language Logo">
+      <p class="language__text">English</p>
+    </div>
+  </div>
+</header>

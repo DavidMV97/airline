@@ -1,0 +1,9 @@
+@import '../../../styles/mixins';
+.logo{
+  img{
+    width: 103px;
+    @include desktop{
+      width: 154px;
+    }
+  }
+}
