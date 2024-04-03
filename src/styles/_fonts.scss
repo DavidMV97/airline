@@ -1,0 +1,9 @@
+@mixin font-family-main {
+  font-family: var(--font-family-1);
+  font-weight: 400;
+}
+
+@mixin font-family-main-bold {
+  font-family: var(--font-family-1);
+  font-weight: 700;
+}
