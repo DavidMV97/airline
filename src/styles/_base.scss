@@ -11,6 +11,10 @@ a,p{
   font-weight: 400;
 }
 
+h1,h3,a,p{
+  color: var(--color-white);
+}
+
 .main-wrapper {
   max-width: var(--screen-lg);
   width: 100%;
@@ -25,4 +29,16 @@ a,p{
       justify-content: space-between;
     }
   }
+}
+
+.button-buy{
+  display: block;
+  width: max-content;
+  background: var(--button-red);
+  color: var(--color-white);
+  border-radius: 100px;
+  padding: 6px 55px;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
 }

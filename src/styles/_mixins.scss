@@ -1,8 +1,8 @@
 // screen size
-$screen-tb: 767px;
+$screen-md: 1248px;
 
 @mixin desktop {
-  @media (min-width: #{$screen-tb}) {
+  @media (min-width: #{$screen-md}) {
     @content;
   }
 }

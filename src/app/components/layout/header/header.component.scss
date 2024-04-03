@@ -55,12 +55,15 @@
   position: fixed;
   left: 100%;
   top: 55px;
+  z-index: 2;
+  background: var(--color-white);
   transition: all .5s ease;
+  padding-top: 30px;
 
   @include desktop{
-    display: block;
     position: inherit;
     height: auto;
+    padding-top: 0;
     &__ul{
       flex-direction: row;
     }

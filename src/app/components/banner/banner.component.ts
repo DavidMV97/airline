@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './banner.component.scss'
 })
 export class BannerComponent {
-
+  public title : string = 'Take a rest'
+  public description : string = 'Discover all the offers available at the best prices for the whole country and the world'
 }

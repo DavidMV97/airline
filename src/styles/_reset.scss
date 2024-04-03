@@ -36,7 +36,16 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+}
+
+h1,p,ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-main);
 }
 
 /* Grouping content
