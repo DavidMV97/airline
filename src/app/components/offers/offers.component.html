@@ -1,0 +1,16 @@
+<div class="main-wrapper offers">
+  <div class="main-wrapper__content">
+    <h2 class="offers__title" >offers</h2>
+    <div class="offers__content">
+      <div class="offers__item" *ngFor="let offer of dataOffers; let i = index">
+        <div class="offers__info">
+          <h3 class="offers__name-city" >{{ offer.city }}</h3>
+          <p class="offers__price-city" >Price: {{ offer.price }}</p>
+        </div>
+        <div class="offers__image">
+          <img [src]="imageUrls[i]" alt="{{ offer.city }}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
