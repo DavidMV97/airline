@@ -1,0 +1,40 @@
+@import '../../../styles/mixins';
+
+.banner-secondary{
+
+  color: var(--color-white);
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    @include desktop{
+      flex-direction: row;
+    }
+  }
+
+  &__info{
+    background-image: linear-gradient(var(--color-main), var(--soft-blue-2));
+    padding: 125px 20px;
+  }
+
+  &__title,
+  &__subtitle{
+    margin: 0;
+    font-size: 34px;
+  }
+
+  &__subtitle{
+    color: var(--soft-blue);
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  &__description{
+    margin-top: 25px;
+    font-size: 18px;
+  }
+
+  img{
+    width: 100%;
+  }
+}

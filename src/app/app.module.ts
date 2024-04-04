@@ -8,6 +8,12 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { OffersComponent } from './components/offers/offers.component';
+import { BannerSecondaryComponent } from './components/banner-secondary/banner-secondary.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { FooterNavigationComponent } from './components/footer-navigation/footer-navigation.component';
+import { DestinationsComponent } from './components/footer-navigation/destinations/destinations.component';
+import { LegalInformationComponent } from './components/footer-navigation/legal-information/legal-information.component';
+import { BookFlightComponent } from './components/footer-navigation/book-flight/book-flight.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { OffersComponent } from './components/offers/offers.component';
     HeaderComponent,
     FooterComponent,
     LogoComponent,
-    OffersComponent
+    OffersComponent,
+    BannerSecondaryComponent,
+    SocialMediaComponent,
+    FooterNavigationComponent,
+    DestinationsComponent,
+    LegalInformationComponent,
+    BookFlightComponent
   ],
   imports: [
     BrowserModule,

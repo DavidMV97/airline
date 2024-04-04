@@ -11,6 +11,10 @@ a,p{
   font-weight: 400;
 }
 
+a{
+  cursor: pointer;
+}
+
 h1,h3,a,p{
   color: var(--color-white);
 }
