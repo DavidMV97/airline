@@ -15,6 +15,7 @@ import { DestinationsComponent } from './components/footer-navigation/destinatio
 import { LegalInformationComponent } from './components/footer-navigation/legal-information/legal-information.component';
 import { BookFlightComponent } from './components/footer-navigation/book-flight/book-flight.component';
 import { FooterContactComponent } from './components/footer-contact/footer-contact.component';
+import { LazyImgDirective } from './lazy-img.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterContactComponent } from './components/footer-contact/footer-conta
     DestinationsComponent,
     LegalInformationComponent,
     BookFlightComponent,
-    FooterContactComponent
+    FooterContactComponent,
+    LazyImgDirective
   ],
   imports: [
     BrowserModule,
