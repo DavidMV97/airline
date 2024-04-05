@@ -64,6 +64,8 @@
     position: inherit;
     height: auto;
     padding-top: 0;
+    pointer-events: auto;
+    overflow: visible;
     &__ul{
       flex-direction: row;
     }
@@ -107,6 +109,70 @@
     font-size: 20px;
     @include desktop{
       font-size: 16px;
+    }
+    &--active{
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+  &__item{
+    &-information{
+      position: relative;
+      &:hover{
+        .navigation__information{
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+
+  &__information{
+    padding: 20px;
+    transform: translate(100%, 0);
+    pointer-events: none;
+    transition: transform 0.5s ease;
+    background: white;
+    &-a{
+      display: block;
+      margin-bottom: 15px;
+    }
+    &--active{
+      transform: translate(0, 0);
+      pointer-events: auto;
+    }
+    @include desktop{
+      width: max-content;
+      padding-right: 65px;
+      transform: translate(0, 0);
+      pointer-events: auto;
+      position: absolute;
+      left: -40px;
+      top: 35px;
+      box-shadow: 0px 0px 6px 0px var(--color-main);
+      border-radius: 16px;
+      pointer-events: none;
+      opacity: 0;
+      z-index: 2;
+      transition: all 0.5s ease;
+      &::after{
+        content: '';
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 10px 15px 10px 0;
+        transform: rotate(90deg);
+        border-color: transparent var(--color-white) transparent transparent;
+        filter: drop-shadow(-4px 0px 3px rgba(24, 24, 35, 0.6));
+        position: absolute;
+        top: -17px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: -1;
+      }
     }
   }
 

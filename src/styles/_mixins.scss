@@ -1,5 +1,12 @@
 // screen size
 $screen-md: 1248px;
+$screen-tb: 767px;
+
+@mixin tablet {
+  @media (min-width: #{$screen-tb}) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media (min-width: #{$screen-md}) {

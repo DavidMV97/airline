@@ -6,4 +6,12 @@
       width: 154px;
     }
   }
+  &.footer-logo{
+    img{
+      width: 180px;
+      @include desktop{
+        width: 299px;
+      }
+    }
+  }
 }

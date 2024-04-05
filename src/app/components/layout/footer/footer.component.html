@@ -1,7 +1,13 @@
-<footer class="footer main-wrapper">
-  <div class="main-wrapper__content">
-    <app-logo></app-logo>
-    <app-social-media></app-social-media>
-    <app-footer-navigation></app-footer-navigation>
+<footer class="footer footer-wrapper main-wrapper">
+  <div class="footer__content main-wrapper__content">
+    <div class="footer__logo">
+      <app-logo [isInFooter]="true" ></app-logo>
+    </div>
+    <div class="footer__social-media">
+      <app-social-media></app-social-media>
+    </div>
+    <div class="footer__navigation">
+      <app-footer-navigation></app-footer-navigation>
+    </div>
   </div>
 </footer>

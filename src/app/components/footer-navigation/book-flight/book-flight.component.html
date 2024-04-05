@@ -1,6 +1,8 @@
-<h3>Book your flight</h3>
-<ul>
-  <li  *ngFor="let data of dataFlight;" >
-    <a href="{{ data.urlLink }}">{{ data.nameLink }}</a>
-  </li>
-</ul>
+<div class="footer-nav navigation-flight">
+  <h3>Book your flight</h3>
+  <ul>
+    <li *ngFor="let data of dataFlight;">
+      <a href="{{ data.urlLink }}">{{ data.nameLink }}</a>
+    </li>
+  </ul>
+</div>

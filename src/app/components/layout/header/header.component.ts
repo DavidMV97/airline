@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  // variable to show and hide menu
   public active : boolean = false
+  // variable to show hide subitems information
+  public activeItemsInformation : boolean = false
 
   constructor() {}
 
@@ -14,6 +17,12 @@ export class HeaderComponent {
 
   setActive() : void {
     this.active = !this.active
+  }
+
+  setActiveInformation() : void {
+    console.log('clickk');
+
+    this.activeItemsInformation = !this.activeItemsInformation
   }
 
 }

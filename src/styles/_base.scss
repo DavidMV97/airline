@@ -1,3 +1,5 @@
+@import '../styles/mixins';
+
 * {
   box-sizing: border-box;
 }
@@ -13,9 +15,10 @@ a,p{
 
 a{
   cursor: pointer;
+  color: var(--color-main);
 }
 
-h1,h3,a,p{
+h1,h3,p{
   color: var(--color-white);
 }
 
@@ -28,9 +31,28 @@ h1,h3,a,p{
   &__content {
     @extend .main-wrapper;
     max-width: var(--screen-md);
+    padding: 0;
     &--flex{
       display: flex;
       justify-content: space-between;
+    }
+  }
+}
+
+.footer{
+  h3{
+    color: var(--color-main);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .footer-nav{
+    a{
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+      @include desktop{
+        font-size: 18px;
+      }
     }
   }
 }

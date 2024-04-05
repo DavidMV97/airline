@@ -4,13 +4,21 @@
       <button (click)="setActive()" class="header__button"  [ngClass]="{'header__button--active' : active }" >
       </button>
       <div class="content-logo">
-        <app-logo></app-logo>
+        <app-logo [isInFooter]="false"></app-logo>
       </div>
       <nav class="navigation" [ngClass]="{'navigation--active' : active }">
         <ul class="navigation__ul">
           <li class="navigation__li"><a href="#" class="navigation__a">Check-in</a></li>
           <li class="navigation__li"><a href="#" class="navigation__a">Manage my booking</a></li>
-          <li class="navigation__li"><a href="#" class="navigation__a">Information</a></li>
+          <li class="navigation__li navigation__item-information">
+            <a (click)="setActiveInformation()" href="#" class="navigation__a" [ngClass]="{'navigation__a--active' : activeItemsInformation }" >Information</a>
+            <ul class="navigation__information" [ngClass]="{'navigation__information--active' : activeItemsInformation }"  >
+              <li><a href="#" class="navigation__information-a">Help center</a> </li>
+              <li><a href="#" class="navigation__information-a">Flight state</a></li>
+              <li><a href="#" class="navigation__information-a">Airplanes</a></li>
+              <li><a href="#" class="navigation__information-a">Routes</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
 

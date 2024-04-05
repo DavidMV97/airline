@@ -14,6 +14,7 @@ import { FooterNavigationComponent } from './components/footer-navigation/footer
 import { DestinationsComponent } from './components/footer-navigation/destinations/destinations.component';
 import { LegalInformationComponent } from './components/footer-navigation/legal-information/legal-information.component';
 import { BookFlightComponent } from './components/footer-navigation/book-flight/book-flight.component';
+import { FooterContactComponent } from './components/footer-contact/footer-contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BookFlightComponent } from './components/footer-navigation/book-flight/
     FooterNavigationComponent,
     DestinationsComponent,
     LegalInformationComponent,
-    BookFlightComponent
+    BookFlightComponent,
+    FooterContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+@import '../../../styles/mixins';
+
+nav{
+  display: flex;
+  flex-direction: column;
+  @include desktop{
+    gap: 50px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

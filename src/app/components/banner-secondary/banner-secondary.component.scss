@@ -1,20 +1,36 @@
 @import '../../../styles/mixins';
 
 .banner-secondary{
-
   color: var(--color-white);
+  margin-top: 30px;
 
   &__content{
-    display: flex;
-    flex-direction: column;
-    @include desktop{
-      flex-direction: row;
+    &--dark{
+      display: flex;
+      flex-direction: column;
+      background: var(--color-main);
+      border-radius: 20px;
+      height: 100%;
+      overflow: hidden;
+      @include tablet{
+        max-height: 391px;
+        flex-direction: row;
+      }
     }
   }
 
   &__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: linear-gradient(var(--color-main), var(--soft-blue-2));
-    padding: 125px 20px;
+    padding: 35px 20px 70px;
+    border-radius: 20px;
+    @include tablet{
+      background-image: linear-gradient(to right, var(--color-main), var(--soft-blue-2));
+      width: 60%;
+      padding: 20px;
+    }
   }
 
   &__title,
@@ -34,7 +50,27 @@
     font-size: 18px;
   }
 
+  &__img{
+    position: relative;
+    clip-path: ellipse(100% 99% at 50% 0%);
+
+    @include tablet{
+      clip-path: ellipse(100% 120% at -10% 50%);
+      max-height: auto;
+      width: 40%;
+    }
+  }
+
   img{
     width: 100%;
+    height: 360px;
+    border-radius: 20px;
+    object-fit: cover;
+    transform: scale(2.4) translate(-23px, -25%);
+    @include tablet{
+      width: 200%;
+      height: 100%;
+      transform: scale(1.0) translate(-50%, 0);
+    }
   }
 }

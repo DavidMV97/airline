@@ -1,0 +1,27 @@
+.footer-contact {
+  background: var(--soft-gray-4);
+
+  &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  &__item:last-child a::after {
+    content: none;
+  }
+
+  &__link {
+    color: var(--soft-gray);
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+
+    &::after {
+      content: '|';
+      display: block;
+    }
+  }
+}
