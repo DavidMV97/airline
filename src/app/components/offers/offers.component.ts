@@ -8,9 +8,9 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class OffersComponent {
   dataOffers = [
-    { city: 'Chicago', price: 288, urlImage: 'city-chicago-1.png', altImage: '' },
-    { city: 'Porto', price: 350, urlImage: 'city-porto.png', altImage: '' },
-    { city: 'Chicago', price: 210, urlImage: 'city-chicago-2.png', altImage: '' }
+    { city: 'Chicago', price: 288, urlImage: 'city-chicago-1.png', altImage: 'Image of the city of Chicago showing some buildings' },
+    { city: 'Porto', price: 350, urlImage: 'city-porto.png', altImage: 'Image of the city of Porto showing a bridge and a neighborhood in the background' },
+    { city: 'Chicago', price: 210, urlImage: 'city-chicago-2.png', altImage: 'Image of the city of Chicago showing some buildings' }
   ];
 
   imageUrls: SafeResourceUrl[] = [];
